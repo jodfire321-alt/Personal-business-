@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Adarsh Business Development</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#172033;
+}
+
+/* HEADER */
+header{
+    background:#0d1b2a;
+    color:white;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+nav a:hover{
+    color:#39d98a;
+}
+
+/* HERO */
+.hero{
+    min-height:500px;
+    padding:90px 7%;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(90deg,rgba(8,18,32,.92),rgba(8,18,32,.55)),
+    url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:18px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    background:#20c77a;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* MARKET PRICE PANEL */
+.market{
+    padding:55px 7%;
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.section-title h2{
+    font-size:32px;
+}
+
+.price-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.price-card{
+    padding:20px;
+    border-radius:12px;
+    background:#f7f9fc;
+    border:1px solid #e1e7ef;
+    box-shadow:0 5px 15px rgba(0,0,0,.06);
+}
+
+.price-card h3{
+    font-size:15px;
+    color:#667085;
+}
+
+.price{
+    font-size:25px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.up{
+    color:#0aa968;
+}
+
+.down{
+    color:#e04444;
+}
+
+/* SERVICES */
+.services{
+    padding:65px 7%;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.service{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-6px);
+}
+
+.icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.service h3{
+    margin-bottom:10px;
+}
+
+.service p{
+    color:#667085;
+    line-height:1.6;
+}
+
+/* PRICING */
+.pricing{
+    padding:65px 7%;
+    background:#eef3f8;
+}
+
+.price-boxes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.plan{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.plan h3{
+    font-size:22px;
+}
+
+.plan .amount{
+    font-size:32px;
+    font-weight:bold;
+    margin:18px 0;
+}
+
+.plan ul{
+    list-style:none;
+    line-height:2;
+    color:#555;
+}
+
+/* CONTACT */
+.contact{
+    padding:65px 7%;
+    background:#0d1b2a;
+    color:white;
+}
+
+.contact-box{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+}
+
+.contact-box p{
+    margin:15px 0 25px;
+    line-height:1.7;
+}
+
+.contact a{
+    color:#20c77a;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#08131f;
+    color:#aaa;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav a{
+        margin:0 7px;
+        font-size:14px;
+    }
+
+    .hero{
+        padding:70px 7%;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .price-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .service-grid,
+    .price-boxes{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Adarsh Business</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#market">Market</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Grow Your Business From Home</h1>
+
+        <p>
+            Professional business development support,
+            customer management and growth planning —
+            all from one place.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+
+    </div>
+
+</section>
+
+
+<!-- MARKET STYLE SECTION -->
+
+<section class="market" id="market">
+
+    <div class="section-title">
+        <h2>Market Price Dashboard</h2>
+        <p>Demo market-style information</p>
+    </div>
+
+    <div class="price-grid">
+
+        <div class="price-card">
+            <h3>Business Growth</h3>
+            <div class="price">+18.5%</div>
+            <span class="up">▲ Positive</span>
+        </div>
+
+        <div class="price-card">
+            <h3>Customer Reach</h3>
+            <div class="price">+24.2%</div>
+            <span class="up">▲ Increasing</span>
+        </div>
+
+        <div class="price-card">
+            <h3>Market Demand</h3>
+            <div class="price">72.8</div>
+            <span class="up">▲ Strong</span>
+        </div>
+
+        <div class="price-card">
+            <h3>Competition</h3>
+            <div class="price">41.6</div>
+            <span class="down">▼ Moderate</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+    <div class="section-title">
+        <h2>My Business Services</h2>
+        <p>Simple solutions for business development</p>
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service">
+            <div class="icon">📈</div>
+            <h3>Business Growth</h3>
+            <p>
+                Business growth planning and practical strategies
+                for improving your customer reach.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="icon">👥</div>
+            <h3>Customer Management</h3>
+            <p>
+                Manage customer communication and build
+                long-term business relationships.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="icon">💡</div>
+            <h3>Business Ideas</h3>
+            <p>
+                Discover new ideas and opportunities for
+                developing your home-based business.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="icon">📊</div>
+            <h3>Market Analysis</h3>
+            <p>
+                Understand market trends, customer demand
+                and business opportunities.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="icon">📱</div>
+            <h3>Digital Promotion</h3>
+            <p>
+                Improve your online presence using social media
+                and digital marketing methods.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="icon">🎯</div>
+            <h3>Business Planning</h3>
+            <p>
+                Create clear goals and practical plans
+                for your business development.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section class="pricing">
+
+    <div class="section-title">
+        <h2>Service Plans</h2>
+        <p>Customize these prices according to your actual business</p>
+    </div>
+
+    <div class="price-boxes">
+
+        <div class="plan">
+            <h3>Basic</h3>
+            <div class="amount">₹499</div>
+            <ul>
+                <li>✓ Basic Consultation</li>
+                <li>✓ Business Ideas</li>
+                <li>✓ Customer Guidance</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <h3>Growth</h3>
+            <div class="amount">₹999</div>
+            <ul>
+                <li>✓ Business Planning</li>
+                <li>✓ Market Analysis</li>
+                <li>✓ Digital Promotion</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <h3>Professional</h3>
+            <div class="amount">₹1,999</div>
+            <ul>
+                <li>✓ Complete Consultation</li>
+                <li>✓ Growth Strategy</li>
+                <li>✓ Customer Management</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-box">
+
+        <h2>Let's Grow Your Business</h2>
+
+        <p>
+            Have a business idea or need help developing
+            your business? Contact me to discuss your requirements.
+        </p>
+
+        <a class="btn" href="mailto:your@email.com">
+            Email Me
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+    © 2026 Adarsh Business Development. All Rights Reserved.
+</footer>
+
+
+<script>
+
+console.log("Adarsh Business Website Loaded");
+
+</script>
+
+</body>
+          </html>
